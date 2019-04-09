@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdd"
+    tools:context=".activity.LoginActivity">
+
+<EditText
+    android:id="@+id/login"
+    android:drawableLeft="@drawable/login_icon_phone_n_hdpi"
+    android:drawablePadding="@dimen/dp_10"
+    android:layout_width="@dimen/dp_280"
+    android:layout_height="@dimen/dp_40"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="@dimen/dp_150"
+    android:background="@null"
+     android:hint="用户名"
+    />
+
+    <View
+        android:background="#ddd"
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="@dimen/dp_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        />
+    <EditText
+        android:id="@+id/login_pass"
+        android:drawableLeft="@drawable/login_icon_lock_n_hdpi"
+        android:drawablePadding="@dimen/dp_10"
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="@dimen/dp_40"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        android:layout_marginTop="@dimen/dp_33"
+        android:background="@null"
+        android:hint="密码"
+        android:drawableRight="@drawable/login_icon_eye_n_hdhpi"
+        />
+
+    <View
+        android:id="@+id/view"
+        android:background="#ddd"
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="@dimen/dp_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_pass"
+        />
+    <TextView
+        android:id="@+id/text"
+        android:text="快速注册"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        android:padding="@dimen/dp_4"
+        android:textColor="#fff"
+
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_40" />
+    <Button
+        android:id="@+id/but"
+        android:drawablePadding="@dimen/dp_10"
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="@dimen/dp_40"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/dp_90"
+        android:text="登录"
+         />
+</android.support.constraint.ConstraintLayout>
